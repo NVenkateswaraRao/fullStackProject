@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyEasy - Book Flights & Hotels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">FlyEasy</div>
+            
+            <!-- Hamburger Menu Toggle (Mobile) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#deals" class="nav-link">Deals</a></li>
+                    <li><a href="#flights" class="nav-link">Flights</a></li>
+                    <li><a href="#hotels" class="nav-link">Hotels</a></li>
+                    <li><a href="#support" class="nav-link">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Urgency Badge -->
+            <div class="urgency-badge">
+                <span class="badge-icon">⏱️</span>
+                <span class="badge-text">Limited Time Offer</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="hero-title">50% Off Asia Flights This Week</h1>
+
+            <!-- Subheading -->
+            <p class="hero-subtitle">Hurry! This exclusive offer expires in just a few days. Book your dream vacation to Asia now and save big on airfare. Limited seats available at this price.</p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">3</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">14</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">32</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <span class="countdown-separator">:</span>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">45</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+
+            <!-- Call-to-Action Button -->
+            <button class="cta-button">Book Now</button>
+
+            <!-- Secondary Info -->
+            <p class="hero-info">✈️ No hidden fees • 🏨 Best price guarantee • 🔒 Secure booking</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Book with FlyEasy?</h2>
+                    <p class="section-subtitle">Discover the benefits that make us the best choice for your travel needs</p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <!-- Feature 1: Non-stop Routes -->
+                    <div class="feature-card">
+                        <div class="feature-icon">✈️</div>
+                        <h3 class="feature-title">Non-Stop Routes</h3>
+                        <p class="feature-description">Access over 500+ non-stop flight routes across Asia, Europe, and North America. Fly directly to your destination with the shortest travel times available.</p>
+                        <ul class="feature-list">
+                            <li>Direct flights to 120+ destinations</li>
+                            <li>Fastest travel times guaranteed</li>
+                            <li>Premium airport lounges included</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 2: Free Meals & Baggage -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🍽️</div>
+                        <h3 class="feature-title">Free Meals & Baggage</h3>
+                        <p class="feature-description">Enjoy complimentary meals, snacks, and beverages on all flights. Check your luggage free and bring extra bags without worrying about fees.</p>
+                        <ul class="feature-list">
+                            <li>Free meals on all flights</li>
+                            <li>2 free checked bags included</li>
+                            <li>Unlimited carry-on allowance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 3: Flexible Booking -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3 class="feature-title">Flexible Booking Changes</h3>
+                        <p class="feature-description">Change your flight dates up to 30 days before departure at no additional cost. Full refunds available within 48 hours of booking cancellation.</p>
+                        <ul class="feature-list">
+                            <li>Free date changes (within 30 days)</li>
+                            <li>48-hour free cancellation policy</li>
+                            <li>No change or cancellation fees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Content Section -->
+        <section class="featured-content">
+            <h2>Travel with Confidence</h2>
+            <p>Experience the easiest way to book your flights and hotels with competitive prices and excellent customer support.</p>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <p class="section-subtitle">Select the perfect travel plan for your needs</p>
+                </div>
+
+                <!-- Pricing Grid -->
+                <div class="pricing-grid">
+                    <!-- Economy Plan -->
+                    <div class="pricing-card economy-plan">
+                        <div class="plan-header">
+                            <h3 class="plan-name">Economy Fare</h3>
+                            <p class="plan-tagline">Perfect for budget travelers</p>
+                        </div>
+
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">249</span>
+                            <span class="period">/person</span>
+                        </div>
+
+                        <button class="plan-button">Select Plan</button>
+
+                        <div class="plan-features">
+                            <h4 class="features-title">What's Included:</h4>
+                            <ul class="features-list">
+                                <li>✓ Basic flight ticket</li>
+                                <li>✓ Standard seat selection</li>
+                                <li>✓ 1 carry-on bag</li>
+                                <li>✓ Personal item allowed</li>
+                                <li>✓ Basic customer support</li>
+                                <li>✓ Online booking tools</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Premium Plan (Recommended) -->
+                    <div class="pricing-card premium-plan">
+                        <div class="recommended-badge">⭐ Recommended</div>
+
+                        <div class="plan-header">
+                            <h3 class="plan-name">Premium Comfort</h3>
+                            <p class="plan-tagline">Best value & comfort</p>
+                        </div>
+
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">449</span>
+                            <span class="period">/person</span>
+                        </div>
+
+                        <button class="plan-button premium-button">Select Plan</button>
+
+                        <div class="plan-features">
+                            <h4 class="features-title">Everything in Economy Plus:</h4>
+                            <ul class="features-list">
+                                <li>✓ Premium cabin seating</li>
+                                <li>✓ Extra legroom & comfort</li>
+                                <li>✓ 2 checked bags free</li>
+                                <li>✓ Unlimited carry-on items</li>
+                                <li>✓ Priority boarding</li>
+                                <li>✓ Complimentary meals & drinks</li>
+                                <li>✓ Airport lounge access</li>
+                                <li>✓ 24/7 premium support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="pricing-note">💳 All plans include secure booking and flexible cancellation within 48 hours</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        function updateCountdown() {
+            // Set the countdown to 3 days from now
+            const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000) + (14 * 60 * 60 * 1000) + (32 * 60 * 1000) + (45 * 1000);
+
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('days').textContent = '0';
+                    document.getElementById('hours').textContent = '0';
+                    document.getElementById('minutes').textContent = '0';
+                    document.getElementById('seconds').textContent = '0';
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+
+        // Initialize countdown on page load
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Content Grid -->
+            <div class="footer-content">
+                <!-- Company Info Section -->
+                <div class="footer-section company-info">
+                    <h3 class="footer-title">FlyEasy</h3>
+                    <p class="footer-description">Your trusted partner for hassle-free flight and hotel bookings. Fly with confidence, travel with ease.</p>
+                    
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="#twitter" class="social-link" aria-label="Follow us on Twitter">
+                            <span class="social-icon">𝕏</span>
+                            <span class="social-text">Twitter</span>
+                        </a>
+                        <a href="#facebook" class="social-link" aria-label="Follow us on Facebook">
+                            <span class="social-icon">f</span>
+                            <span class="social-text">Facebook</span>
+                        </a>
+                        <a href="#instagram" class="social-link" aria-label="Follow us on Instagram">
+                            <span class="social-icon">📷</span>
+                            <span class="social-text">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="footer-section contact-info">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-item">
+                        <span class="contact-label">📍 Address:</span>
+                        <p>123 Airport Plaza, Aviation City<br>New York, NY 10001, USA</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">📞 Phone:</span>
+                        <a href="tel:+1-800-FLYEASY">(800) FLY-EASY</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">✉️ Email:</span>
+                        <a href="mailto:support@flyeasy.com">support@flyeasy.com</a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-section quick-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="links-list">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#flights">Book Flights</a></li>
+                        <li><a href="#hotels">Book Hotels</a></li>
+                        <li><a href="#deals">View Deals</a></li>
+                        <li><a href="#blog">Travel Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Trust & Certifications Section -->
+                <div class="footer-section trust-badges">
+                    <h3 class="footer-title">Trusted By</h3>
+                    <div class="badges-container">
+                        <div class="trust-badge">
+                            <span class="badge-icon">✈️</span>
+                            <span class="badge-name">IATA Certified</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon">🔒</span>
+                            <span class="badge-name">SSL Secure</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon">⭐</span>
+                            <span class="badge-name">5-Star Rated</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon">🛡️</span>
+                            <span class="badge-name">Safety Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 FlyEasy Travel. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#cookies">Cookie Policy</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
