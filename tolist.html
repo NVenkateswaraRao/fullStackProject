@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>My To-Do List</h1>
+        <ul id="taskList">
+            <li>Task 1: Buy groceries <button onclick="removeTask(this)">remove</button></li>
+            <li>Task 2: Clean the house <button onclick="removeTask(this)">remove</button></li>
+            <li>Task 3: Finish homework <button onclick="removeTask(this)">remove</button></li>
+        </ul>
+        <input type="text" id="newTask" placeholder="Enter new task">
+        <button onclick="addTask(document.getElementById('newTask').value)">Add Task</button>
+    </div>
+    <script>
+        const tasks = [];
+        function addTask(task) {
+            tasks.push(task);
+            console.log("Task added:", task);
+            const taskList = document.getElementById('taskList');
+            const newTaskItem = document.createElement('li');
+            const removeButton = document.createElement('button');
+            removeButton.textContent = 'remove';
+            removeButton.onclick = function() {
+                removeTask(removeButton);
+            };
+
+            newTaskItem.textContent = task;
+            newTaskItem.appendChild(removeButton);
+            taskList.appendChild(newTaskItem);
+        }
+        function removeTask(button) {
+            const taskItem = button.parentElement;
+            const taskText = taskItem.textContent.replace('remove', '').trim();
+            const index = tasks.indexOf(taskText);
+            if (index > -1) {
+                tasks.splice(index, 1);
+                console.log("Task removed:", taskText);
+            }
+            taskItem.remove();
+        }
+        
+    </script>
+</body>
+</html>
